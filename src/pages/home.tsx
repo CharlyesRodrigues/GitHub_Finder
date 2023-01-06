@@ -14,13 +14,27 @@ const Home = () => {
 
     console.log(data); // Comando para observar se esta tudo OK 
 
+    const {avatar_url, login, location, followers, following } = data;
+
+    const userData: UserProps = {
+
+    avatar_url,
+    login,
+    location,
+    followers,
+    following,
+    };
+
+    setUser(userData);
+
     }
 
     return (
 
         <div>
             <Search loadUser={loadUser} />
-
+          {user && <p>{user.login}</p>}
+         
         </div>
 
     )

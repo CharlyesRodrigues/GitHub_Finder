@@ -9,7 +9,7 @@ type SearchProps ={
 import React from "react";
 import { MagnifyingGlass } from "phosphor-react";
 import { useState } from "react";
-
+import teste  from './Search.module.css'
 
 
 const Search = ({loadUser}: SearchProps) => {
@@ -18,11 +18,11 @@ const Search = ({loadUser}: SearchProps) => {
 
     return (
 
-        <div>
+        <div className= {teste.search}>
             <h2>Busque por um usuário: </h2>
             <p>Conheça seus melhores repositórios</p>
 
-            <div>
+            <div className={teste.search_container}>
               <input 
               type="text" 
               placeholder="Digite o nome do usuário"
@@ -31,7 +31,7 @@ const Search = ({loadUser}: SearchProps) => {
               />
               <button onClick={()=> loadUser(userName)} >
 
-              <MagnifyingGlass size={10} />
+              <MagnifyingGlass className={teste.icons} />
               </button>
 
             </div>
