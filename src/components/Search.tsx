@@ -40,8 +40,9 @@ const Search = ({loadUser}: SearchProps) => {
               <button onClick={()=> loadUser(userName)} >
 
               <MagnifyingGlass className={teste.icons} />
+             
               </button>
-
+  
             </div>
         </div>
 

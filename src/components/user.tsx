@@ -15,11 +15,13 @@ const User = ({
     <div>
         <img src={avatar_url} alt={login} />
         <h2>{login}</h2>
+       {location && (
         <p>
             <MapPinLine size={32} />
             <span>{location}</span>
 
         </p>
+        )}
         <div>
             <div>
                 <p>Seguidores:</p>

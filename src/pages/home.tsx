@@ -13,7 +13,7 @@ const Home = () => {
 
     const  data = await res.json();
 
-    console.log(data); // Comando para observar se esta tudo OK 
+   // console.log(data); // Comando para observar se esta tudo OK 
 
     const {avatar_url, login, location, followers, following } = data;
 
