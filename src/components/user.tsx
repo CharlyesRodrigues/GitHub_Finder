@@ -17,11 +17,11 @@ const User = ({
         <h2>{login}</h2>
        {location && (
         <p>
-            <MapPinLine size={32} />
+            <MapPinLine size={32} color="#c105f5" />
             <span>{location}</span>
 
         </p>
-        )}
+        )} 
         <div>
             <div>
                 <p>Seguidores:</p>
@@ -32,9 +32,10 @@ const User = ({
                 <p>Seguindo:</p>
                 <p>{following}</p>
            </div>
-              <Home to={`/repos/${login}`}>Ver melhores projetos</Home>
+           <Home to={`/repos/${login}`}>Ver melhores projetos</Home>
+              
         </div>
-
+  
     </div>
 
     );

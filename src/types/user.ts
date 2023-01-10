@@ -7,3 +7,4 @@ following: number; // following => seguindo
 
 
 };
+

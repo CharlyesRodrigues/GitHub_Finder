@@ -6,7 +6,7 @@ type SearchProps ={
 
 
 
-import React from "react";
+
 import { MagnifyingGlass } from "phosphor-react";
 import { useState, KeyboardEvent } from "react";
 import teste  from './Search.module.css'
