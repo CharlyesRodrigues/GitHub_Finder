@@ -1,7 +1,7 @@
 import { UserProps } from "../types/user";
 import { MapPinLine } from "phosphor-react";
 import Home from "../pages/home";
-
+import classes from './User.module.css';
 
 const User = ({
     login, 
@@ -12,7 +12,7 @@ const User = ({
 }: UserProps) => {
 
     return (
-    <div>
+    <div className= {classes.user}>
         <img src={avatar_url} alt={login} />
         <h2>{login}</h2>
        {location && (
