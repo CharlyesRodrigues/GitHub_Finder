@@ -1,15 +1,17 @@
 import { UserProps } from "../types/user";
 import { MapPinLine } from "phosphor-react";
+import Home from "../pages/home";
+
 
 const User = ({
-    login,
+    login, 
     avatar_url,
     followers,
     following,
     location,
 }: UserProps) => {
 
-    return
+    return (
     <div>
         <img src={avatar_url} alt={login} />
         <h2>{login}</h2>
@@ -28,14 +30,14 @@ const User = ({
                 <p>Seguindo:</p>
                 <p>{following}</p>
            </div>
-              <Link to={`/repos/${login}`}>Ver melhores projetos</Link>
+              <Home to={`/repos/${login}`}>Ver melhores projetos</Home>
         </div>
 
     </div>
 
+    );
 
-
-}
+};
 
 
 
