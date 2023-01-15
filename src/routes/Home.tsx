@@ -34,7 +34,7 @@ const Home = () => {
     login,
     location,
     followers,
-    following,
+    following, 
     };
 
     setUser(userData);

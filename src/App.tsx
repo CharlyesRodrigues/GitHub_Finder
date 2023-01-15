@@ -1,6 +1,6 @@
 
 
-import Home from './pages/home'
+import Home from './routes/Home'
 import Search from './components/Search'
 
 import classes  from  './App.module.css' // para funcionar o css  nesse formato, temos que colocar (module) entre o  App.css

@@ -1,6 +1,6 @@
 import { UserProps } from "../types/user";
 import { MapPinLine } from "phosphor-react";
-import Link from "../pages/home";
+import Link from "../pages/Home";
 import classes from './User.module.css';
 
 const User = ({
@@ -35,7 +35,8 @@ const User = ({
  
             
         </div>
-        <div className={classes.projetos}> Ver melhores Projetos</div>  
+        <Link to={`/repos/${login}`}>Ver melhores Projetos</Link>
+         
     </div>
 
     );
