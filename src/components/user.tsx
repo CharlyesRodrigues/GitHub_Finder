@@ -32,7 +32,7 @@ const User = ({
                 <p>Seguindo:</p>
                 <p>{following}</p>
            </div>
-           <Home to={`/repos/${login}`}>Ver melhores projetos</Home>
+   
               
         </div>
   
